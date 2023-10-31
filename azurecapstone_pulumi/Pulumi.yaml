@@ -1,0 +1,6 @@
+name: divergcapstone_one
+runtime:
+  name: python
+  options:
+    virtualenv: venv
+description: create azure resources
