@@ -6,8 +6,12 @@ Welcome to my first azure Capstone Project! The goal of this project is to setup
 
 
 ## Architectural Diagram
+
+
+   ###   Diagram Details
+
 ```
- ### Diagram details
+Diagram details
  The Azure cloud architectural diagram displays the a web application
     - 
 ```
