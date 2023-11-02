@@ -4,9 +4,11 @@
 
 Welcome to my first azure Capstone Project! The goal of this project is to setup an infrasture for a Azure web application.
 
-![AzWebAppdeployment02Nov23](https://github.com/asanni2022/capstoneproject/assets/104282577/191c150e-1df4-481e-9cc1-d322cefbb55c)
-
 ## Architectural Diagram
+
+
+
+![AzWebAppdeployment02Nov23](https://github.com/asanni2022/capstoneproject/assets/104282577/191c150e-1df4-481e-9cc1-d322cefbb55c)
 
 
    ###   Diagram Details
