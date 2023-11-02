@@ -1,0 +1,8 @@
+config:
+  azpulumi_vmtemplate:adminUsername: ls
+  azpulumi_vmtemplate:osImage: Debian:debian-11:11:latest
+  azpulumi_vmtemplate:servicePort: "80"
+  azpulumi_vmtemplate:sshPublicKey: azpulumikey
+  azpulumi_vmtemplate:vmName: my-server
+  azpulumi_vmtemplate:vmSize: Standard_A1_v2
+  azure-native:location: EASTUS2
