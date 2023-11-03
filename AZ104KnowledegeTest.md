@@ -85,7 +85,7 @@ Business-critical application hosted in a virtual machine that is associated wit
 ### Answer
 1. **Change the VM size:** Resizing a virtual machine involves stopping the VM, changing its size, and then starting it again. During this process, the VM is unavailable, causing system downtime.Changing the VM size. All other changes can be made without causing system downtime.
 
-| Change | Causes system downtime? |
+| Change | Causes system downtime? |      |
 | ----- | ----- | ----- |
 | Create and attach a new disk | No |
 | Change the VM size | Yes |
