@@ -85,7 +85,7 @@ Business-critical application hosted in a virtual machine that is associated wit
 ### Answer
 1. **Change the VM size:** Resizing a virtual machine involves stopping the VM, changing its size, and then starting it again. During this process, the VM is unavailable, causing system downtime.Changing the VM size. All other changes can be made without causing system downtime.
 
-| Change | Causes system downtime? |      |
+| Change | Causes system downtime |      |
 | ----- | ----- | ----- |
 | Create and attach a new disk | No |
 | Change the VM size | Yes |
@@ -109,6 +109,62 @@ The other changes you mentioned can generally be performed without causing syste
 - **Move the VM to a new resource group:** Moving a VM to a new resource group can be done without causing system downtime.
 
 - **Add a Desired State Configuration (DSC) extension:** Adding or updating a DSC extension should not cause system downtime by itself. However, the specific configurations applied by DSC extensions can have varying impacts on system availability, depending on the changes they make.
+
+
+
+## Question 4
+You plan to migrate your business-critical application to Azure virtual machines. You need to make sure that at least two VMs are available during planned Azure maintenance. What should you do?
+
+### Answer
+To make sure that at least two VMs are available during planned Azure maintenance, you can use the following methods:
+
+* **Availability zones:** Deploy your VMs in two different availability zones. Availability zones are physically isolated locations within an Azure region. If there is planned maintenance in one availability zone, your VMs in the other availability zone will still be available.
+* **Availability sets:** Deploy your VMs in an availability set. An availability set is a logical grouping of VMs that are spread across multiple availability zones. Availability sets help to ensure that your VMs are not all affected by the same planned maintenance event.
+* **Managed availability sets:** Use managed availability sets. Managed availability sets are a premium feature that provides even more protection against planned maintenance. Managed availability sets will automatically restart your VMs in another availability zone if there is planned maintenance in the availability zone where they are currently running.
+* **Use a load balancer to distribute traffic across your VMs.** This will help to ensure that your application is still available even if one or more of your VMs are unavailable.
+* **Use a health probe to monitor your VMs.** A health probe is a test that Azure performs to check the health of your VMs. If a VM fails the health probe, Azure will automatically restart it.
+* **Use Azure Monitor to receive alerts about planned maintenance events.** Azure Monitor can send you alerts via email, SMS, or webhook. This will give you time to take corrective action before planned maintenance begins.
+
+Here are the steps to deploy your application to two different availability zones:
+
+1. Create a virtual network with at least two subnets in different availability zones.
+2. Deploy two VMs in the different subnets.
+3. Deploy your application to both VMs.
+
+
+
+## Question 5
+You are managing 50 virtual machines. You need to identify idle and underutilized resources to reduce the overall costs of your account. The service tier of your development virtual machines must also be changed to a less expensive offering. What Azure service should you use?
+
+### Answer
+To identify idle and underutilized resources and get recommendations for optimizing your Azure resources, you should use "Azure Advisor." Azure Advisor is a service that provides personalized recommendations based on your Azure usage and configurations. It analyzes your resource utilization, configurations, and other factors to help you optimize your Azure environment, reduce costs, and improve overall efficiency.
+
+Azure Advisor provides recommendations in various categories, including:
+
+1. **Cost:** It helps you identify idle or underutilized resources and provides recommendations for cost savings, such as resizing or deallocating VMs, and rightsizing services.
+
+2. **Security:** It offers security-related recommendations to help you enhance your security posture.
+
+3. **Performance:** It provides guidance on improving the performance of your resources.
+
+4. **High Availability:** It offers suggestions to enhance the reliability and availability of your services.
+
+5. **Operational Excellence:** Recommendations for operational efficiency and best practices.
+
+Azure Advisor will automatically change the service tier of your development virtual machines to a less expensive offering. It will also start or stop your virtual machines based on your usage patterns.
+
+Advisor looks at the following factors:
+  **CPU utilization: Advisor looks at the CPU utilization of your VMs to identify VMs that are underutilized.
+
+  **Disk utilization: Advisor looks at the disk utilization of your VMs to identify VMs that are underutilized.
+
+  **Network traffic: Advisor looks at the network traffic of your VMs to identify VMs that are underutilized.
+
+
+
+
+
+
 
 
 
