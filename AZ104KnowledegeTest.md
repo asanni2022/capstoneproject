@@ -10,7 +10,7 @@ Copy Onpremise file into a storage account name DivergenceCapstone1. Use AzCopy 
   - * File Storage
   - * Data Lake Storage Gen2
 
-** To copy your files to Azure Blob Storage using AzCopy:**
+**To copy your files to Azure Blob Storage using AzCopy:**
 
 1. Open a command prompt or PowerShell window.
 2. Navigate to the directory where you installed AzCopy.
