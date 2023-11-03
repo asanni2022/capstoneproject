@@ -80,6 +80,36 @@ Create the Azure Policy definition and assigned it to the Azure Management Group
 
 
 ## Question 3
+Business-critical application hosted in a virtual machine that is associated with Azure subscription. The virtual machine has a managed disk and a network interface. You are planning to make the following changes: create and attach a new disk, change the VM size, detach a network interface, move the VM to a new resource group, add a Desired State Configuration (DSC) extension. Which of the following changes would cause system downtime?
+
+### Answer
+1. **Change the VM size:** Resizing a virtual machine involves stopping the VM, changing its size, and then starting it again. During this process, the VM is unavailable, causing system downtime.Changing the VM size. All other changes can be made without causing system downtime.
+
+| Change | Causes system downtime? |
+|---|---|---|
+| Create and attach a new disk | No |
+| Change the VM size | Yes |
+| Detach a network interface | No |
+| Move the VM to a new resource group | No |
+| Add a DSC extension | No |
+
+Changing the VM size causes system downtime because Azure needs to stop the VM to resize the underlying hardware. All other changes can be made without stopping the VM.
+
+Here are some tips for minimizing system downtime when changing the VM size:
+  - * Use a live migration to resize the VM. Live migration allows Azure to move the VM to a new host without stopping it.
+  - * Use an autoscaling group to resize the VM. An autoscaling group can automatically resize VMs based on predefined rules.
+  - * Use a load balancer to distribute traffic across multiple VMs. This will allow you to resize one VM at a time without impacting your users.
+
+The other changes you mentioned can generally be performed without causing system downtime:
+
+- **Create and attach a new disk:** You can add a new data disk to a running VM without causing downtime. However, you might need to perform configuration changes inside the VM to use the new disk effectively.
+
+- **Detach a network interface:** Detaching a network interface can be done without causing system downtime. However, it may affect the network connectivity of the VM if it relies on the detached interface.
+
+- **Move the VM to a new resource group:** Moving a VM to a new resource group can be done without causing system downtime.
+
+- **Add a Desired State Configuration (DSC) extension:** Adding or updating a DSC extension should not cause system downtime by itself. However, the specific configurations applied by DSC extensions can have varying impacts on system availability, depending on the changes they make.
+
 
 
 
