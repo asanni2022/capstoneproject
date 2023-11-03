@@ -4,7 +4,7 @@ Your company has an Azure Storage account named DivergenceCapstone1. You have to
 
 ### Answer
 
-Copy Onpremise file into a storage account name DivergenceCapstone1.Use AzCopy to copy your files from your on-premises network to the following Azure Storage services in DivergenceCapstone1 storage account:
+Copy Onpremise file into a storage account name DivergenceCapstone1. Use AzCopy to copy your files from your on-premises network to the following Azure Storage services in DivergenceCapstone1 storage account:
 
   - * Blob Storage
   - * File Storage
