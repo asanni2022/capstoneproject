@@ -2,7 +2,7 @@
 
 
 ### Question:
- **Birthday Program
+ ### Birthday Program
 
 The code provided is a simple Python application that prompts a user for their birthdate, calculates the number of days until their next birthday (or the number of days since, if it has
 already occurred this year), and then prints out a message to the user with this information. Here is a breakdown of the code:
