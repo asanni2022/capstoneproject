@@ -13,7 +13,7 @@ Welcome to my first azure Capstone Project! The goal of this project is to setup
 
    ###   Diagram Details
 
-```
+
 Diagram details
  The Azure cloud architectural diagram displays the a web application
 Components:
@@ -44,21 +44,20 @@ Security:
   - The bastion host provides a secure way to access the resources in the private subnet.
   - The Key Vault is used to store the encryption key for the database, which helps to protect the database from unauthorized access.
 
-```
-
 
 ## Approach
 <details>
-<summary>Step 1</summary>
+<summary>Steps</summary>
 
-- Setup Pulumi
+  - Infrastructure breakdown
+  - Setup Pulumi
   - Install Pulumi
   - Configure Pulumi
   - Update main file with Azure resources needed
 
 </details>
 
-Here's a detailed documentation of the Azure resources and their features based on the specified criteria:
+Below is a detailed documentation of the Azure resources and their features to ensure the client web application is secure, scalable, available and robust. 
 
 ### Service Features:
 <details>
