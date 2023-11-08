@@ -2,7 +2,7 @@
 
 ## Objective
 
-Welcome to my first azure Capstone Project! The goal of this project is to setup an infrasture for a Azure web application.
+Welcome to my first azure Capstone Project! The goal of this project is to setup an infrastructure for a Azure web application.
 
 ## Architectural Diagram
 
