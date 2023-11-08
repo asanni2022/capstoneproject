@@ -58,6 +58,133 @@ Security:
 
 </details>
 
+Here's a detailed documentation of the Azure resources and their features based on the specified criteria:
+
+### Service Features:
+<details>
+<summary>Service Features</summary>
+- **Azure Virtual Network (VPC):** Provides isolated and secure network environments in Azure. Features include custom IP addressing, routing, and network peering.
+
+- **Azure Availability Zone:** Ensures high availability and fault tolerance by replicating applications and data across multiple data centers within an Azure region.
+
+- **Azure Bastion Host:** Offers secure and seamless RDP and SSH access to Azure VMs over SSL. It simplifies management and enhances security.
+
+- **Azure NAT Gateway:** Enables outbound internet access for resources in a private subnet, enhancing security by not exposing internal IPs.
+
+- **Azure Key Vault:** Provides secure storage and management of cryptographic keys, secrets, and certificates. Offers integration with other Azure services.
+
+- **Azure SQL Database:** A fully managed database service with features for scaling, high availability, and automated backups.
+
+- **Azure Service Bus:** A messaging service that enables reliable and scalable communication between distributed applications.
+
+- **Azure Application Insights:** Provides application performance and availability monitoring, including deep insights into application behavior.
+
+- **Azure Network Security Group (NSG):** Acts as a virtual firewall to control inbound and outbound traffic. It enhances security and access control.
+</details>
+
+### Scalability and Performance:
+<details>
+<summary>Scalability and Performance</summary>
+- **Azure Virtual Network:** Supports scaling by enabling the addition of subnets and adjusting IP address spaces. Load balancers can distribute traffic for performance.
+
+- **Azure Availability Zone:** Enhances performance and availability by distributing workloads across multiple data centers in a region.
+
+- **Azure Bastion Host:** Offers scalability with consistent and secure RDP/SSH access to VMs, reducing management overhead.
+
+- **Azure NAT Gateway:** Scales with increased outbound traffic demands, ensuring network performance.
+
+- **Azure SQL Database:** Provides options for auto-scaling, enabling automatic adjustments to performance tiers based on demand.
+
+- **Azure Service Bus:** Scales to accommodate message volumes, supporting high throughput and reliability.
+
+- **Azure Application Insights:** Offers performance metrics and deep insights into application performance, helping with optimization.
+</details>
+
+
+### Reliability and Availability:
+<details>
+<summary>Reliability and Availability</summary>
+- **Azure Virtual Network:** Provides high reliability with built-in redundancy, and availability zones enhance fault tolerance.
+
+- **Azure Availability Zone:** Ensures high availability by replicating resources across multiple data centers.
+
+- **Azure Bastion Host:** Enhances security and reliability by providing secure RDP and SSH access to VMs.
+
+- **Azure NAT Gateway:** Provides reliability for outbound traffic, with redundancy and fault tolerance mechanisms.
+
+- **Azure SQL Database:** Offers high availability with automated backups and geo-replication.
+
+- **Azure Service Bus:** Ensures message reliability with built-in redundancy and failover.
+
+- **Azure Application Insights:** Monitors application availability and performance, helping maintain high uptime.
+</details>
+
+### Security and Compliance:
+<details>
+<summary>Security and Compliance</summary>
+- **Azure Virtual Network:** Supports network security with Network Security Groups (NSGs) and integrates with Azure Active Directory for authentication.
+
+- **Azure Bastion Host:** Ensures secure remote access with SSL encryption and Azure Active Directory authentication.
+
+- **Azure Key Vault:** Provides strong security for key management, secrets, and certificates, along with compliance certifications.
+
+- **Azure SQL Database:** Offers built-in security features, including encryption, firewall rules, and role-based access control.
+
+- **Azure Service Bus:** Supports data encryption in transit and at rest, and offers role-based access control.
+
+- **Azure Network Security Group (NSG):** Enhances security with granular access control and network-level security rules.
+</details>
+
+### Data Storage and Management:
+<details>
+<summary>Data Storage and Management</summary>
+- **Azure SQL Database:** Offers secure and managed relational database storage with various tiers for different storage needs.
+
+- **Azure Key Vault:** Provides secure storage for cryptographic keys, secrets, and certificates.
+</details>
+
+### Integration Capabilities:
+<details>
+<summary>Integration Capabilities</summary>
+- **Azure Virtual Network:** Seamlessly integrates with Azure services, and Azure Bastion Host provides secure access.
+
+- **Azure Key Vault:** Integrates with various Azure services for secure key management and storage.
+
+- **Azure SQL Database:** Easily integrates with other Azure services and provides connectivity options.
+
+- **Azure Service Bus:** Seamlessly works with various Azure services for messaging and event-driven applications.
+
+- **Azure Application Insights:** Integrates with Azure services for monitoring and diagnostics.
+</details>
+
+### Cost and Pricing Model:
+<details>
+<summary>Cost and Pricing Model</summary>
+- Costs for Azure resources vary based on factors like usage, performance tiers, and regional availability. Refer to the Azure Pricing Calculator for detailed cost estimates.
+</details>
+
+### Management and Monitoring:
+<details>
+<summary>Management and Monitoring</summary>
+- **Azure Bastion Host:** Provides integration with Azure Monitor for monitoring and diagnostics.
+
+- **Azure Application Insights:** Offers extensive monitoring capabilities, including application performance, diagnostics, and alerts.
+</details>
+
+### Service-Level Agreements (SLAs):
+<details>
+<summary>Service-Level Agreements (SLAs)</summary>
+- Azure provides SLAs for uptime, availability, performance, and support for various services. SLA details can be found on the Azure Service Level Agreements page.
+</details>
+
+
+## References
+<details>
+<summary>References</summary>
+https://azure.microsoft.com/en-us/pricing/details/azure-sql-database/single/
+
+</details>
+
 ## Infrastructure Code
 
 ```
