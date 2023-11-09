@@ -4,8 +4,29 @@
 
 Welcome to my first azure Capstone Project! The goal of this project is to setup an infrastructure for a Azure web application.
 
-## Architectural Diagram
+## Executive Summary
+To recommend a solution that solves the challenge of managing an increasing number of read requests The proposed solution replicates the reference architecture by using Azure's managed database service, Azure Database for PostgreSQL, to implement read replicas and Azure Load Balancer to distribute read traffic. This approach aligns with Azure's best practices for database replication and load distribution, ensuring a robust and scalable system. Host the web application in Azure's App Service for efficient communication with the database.
 
+
+## AWS to Azure Comparison:
+
+  - Primary Database: AWS Aurora equivalent in Azure is Azure Database for PostgreSQL.
+
+  - Read Replicas: For data replication, both AWS and Azure support read replicas, ensuring real-time data replication.
+
+  - Load Distribution: AWS uses an Application Load Balancer for distributing traffic, while Azure uses Azure Load Balancer, providing similar capabilities.
+
+  - Scalability: Both AWS and Azure offer Auto scaling options based on demand to scale up or scale down as demanded.
+
+  - Availability: for reliability and availability, both AWS and Azure offers regions and availability zones to ensure availability.
+
+  - Performance: Performance enhancements are achievable in both platforms with the proper use of read replicas.
+    
+  - Monitorig: AWS uses Amazon CloudWatch, while Azure uses Application Insights.
+
+
+
+## Architectural Diagram
 
 
 ![AzWebAppdeployment02Nov23](https://github.com/asanni2022/capstoneproject/assets/104282577/191c150e-1df4-481e-9cc1-d322cefbb55c)
